@@ -61,10 +61,11 @@ def a_star(start_state):
 
 path = a_star((3, 3, 'left', 0, 0))
 # print(paths)
-
 for state in path:
     m_left, c_left, b_pos, m_right, c_right = state
-    print(f"{m_left} missionaries and {c_left} cannibals on the left side, {m_right} missionaries and {c_right} cannibals on the right side \nBoat on {b_pos} side\n")
+    print(
+        f"Left Side: {m_left}Ms & {c_left}Cs \t Boat:{b_pos} \t Right Side: {m_right}Ms & {c_right}Cs")
+
 
 
 
